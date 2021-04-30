@@ -12,10 +12,7 @@
    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    
-</body>
-</html>
+
 
 <body>
             <section id="navbar">
@@ -73,7 +70,7 @@
             </p>
                                     <!-- img 1 -->
         <figure>
-            <img src="http://www.theshulers.com/whitepapers/internet_whitepaper/images/ruswp_diag1.gif" alt="internet" title="The internet" class="center">
+            <img src="/img/diag1.gif" alt="internet" title="The internet" class="center">
             <figcaption>Diagram 1 </figcaption>
         </figure>
             <p>If you connect to the Internet through an Internet Service Provider (ISP), you are usually assigned a temporary IP address for the duration of your dial-in session. If you connect to the Internet from a local area network (LAN) your computer might have a permanent IP address or it might obtain a temporary one from a DHCP (Dynamic Host Configuration Protocol) server. In any case, if you are connected to the Internet, your computer has a unique IP address.
@@ -117,7 +114,7 @@
             </p>
                 <!--img2-->
                 <figure>
-                    <img src="http://www.theshulers.com/whitepapers/internet_whitepaper/images/ruswp_diag2.gif" alt="internet protocol" title="The Internet Protocol" class="center">
+                    <img src="/img/diag2.gif" alt="internet protocol" title="The Internet Protocol" class="center">
                     <figcaption>Diagram 2 </figcaption>
                 </figure>
             <ol>
@@ -152,7 +149,7 @@
             </p>
             <!--img3-->
             <figure>
-                <img src="http://www.theshulers.com/whitepapers/internet_whitepaper/images/ruswp_diag3.gif" alt="internet_network" title="The Internet Network" class="center">
+                <img src="/img/diag3.gif" alt="internet_network" title="The Internet Network" class="center">
                 <figcaption>Diagram 3 </figcaption>
             </figure>
             <p>Diagram 3 is actually Diagram 1 redrawn with more detail. The physical connection through the phone network to the Internet Service Provider might have been easy to guess, but beyond that might bear some explanation.
@@ -176,7 +173,7 @@
             </p>
             <!--img4-->
             <figure>
-                <img src="http://www.theshulers.com/whitepapers/internet_whitepaper/images/ruswp_diag4.gif" alt="Internet_Infrastructure" title="The Internet Infrastructure" class="center">
+                <img src="/img/diag4.gif" alt="Internet_Infrastructure" title="The Internet Infrastructure" class="center">
                 <figcaption>Diagram 4 </figcaption>
             </figure>
             <p>This is not a true representation of an actual piece of the Internet. Diagram 4 is only meant to demonstrate how the NSPs could interconnect with each other and smaller ISPs. None of the physical network components are shown in Diagram 4 as they are in Diagram 3. This is because a single NSP's backbone infrastructure is a complex drawing by itself. Most NSPs publish maps of their network infrastructure on their web sites and can be found easily. To draw an actual map of the Internet would be nearly impossible due to it's size, complexity, and ever changing structure.
@@ -197,7 +194,7 @@
             </p>
             <!--img5-->
             <figure>
-            <img src="http://www.theshulers.com/whitepapers/internet_whitepaper/images/ruswp_diag5.gif" alt="Internet_Routing_Hierarchy" title="The Internet Routing Hierarchy" class="center">
+            <img src="img/diag5.gif" alt="Internet_Routing_Hierarchy" title="The Internet Routing Hierarchy" class="center">
             <figcaption>Diagram 5 </figcaption>
         </figure>
             <p>When a packet arrives at a router, the router examines the IP address put there by the IP protocol layer on the originating computer. The router checks it's routing table. If the network containing the IP address is found, the packet is sent to that network. If the network containing the IP address is not found, then the router sends the packet on a default route, usually up the backbone hierarchy to the next router. Hopefully the next router will know where to send the packet. If it does not, again the packet is routed upwards until it reaches a NSP backbone. The routers connected to the NSP backbones hold the largest routing tables and here the packet will be routed to the correct backbone, where it will begin its journey 'downward' through smaller and smaller networks until it finds it's destination.
@@ -218,7 +215,7 @@
             </p>
             <!--img6-->
             <figure>
-                <img src="http://www.theshulers.com/whitepapers/internet_whitepaper/images/ruswp_diag6.gif" alt="DNS" title="The DNS Hierarchy" class="center">
+                <img src="img/diag6.gif" alt="DNS" title="The DNS Hierarchy" class="center">
                 <figcaption>Diagram 6 </figcaption>
             </figure>
             <p>The Domain Name Service is structured as a hierarchy similar to the IP routing hierarchy. The computer requesting a name resolution will be re-directed 'up' the hierarchy until a DNS server is found that can resolve the domain name in the request. Diagram 6 illustrates a portion of the hierarchy. At the top of the tree are the domain roots. Some of the older, more common domains are seen near the top. What is not shown are the multitude of DNS servers around the world which form the rest of the hierarchy.
@@ -347,7 +344,7 @@
 
             <!--img7-->
             <figure>
-                <img src="http://www.theshulers.com/whitepapers/internet_whitepaper/images/ruswp_diag7.gif" alt="TCP" title="The TCP h2" class="center">
+                <img src="img/diag7.gif" alt="TCP" title="The TCP h2" class="center">
                 <figcaption>Diagram 7 </figcaption>
             </figure>
             <p>Notice that there is no place for an IP address in the TCP h2. This is because TCP doesn't know anything about IP addresses. TCP's job is to get application level data from application to application reliably. The task of getting data from computer to computer is the job of IP.</p>
@@ -364,14 +361,14 @@
             </p>
             <!--img8-->
             <figure>
-            <img src="http://www.theshulers.com/whitepapers/internet_whitepaper/images/ruswp_diag8.gif" alt="IP h2" title="The IP h2" class="center">
+            <img src="img/diag8.gif" alt="IP h2" title="The IP h2" class="center">
             <figcaption>Diagram 8 </figcaption>
         </figure>
             <p>Above we see the IP addresses of the sending and receiving computers in the IP h2. Below is what a packet looks like after passing through the application layer, TCP layer, and IP layer. The application layer data is segmented in the TCP layer, the TCP h2 is added, the packet continues to the IP layer, the IP h2 is added, and then the packet is transmitted across the Internet.
             </p>
         <!--img9-->
             <figure>
-            <img src="http://www.theshulers.com/whitepapers/internet_whitepaper/images/ruswp_diag9.gif" alt="Packet" title="A packet" class="center">
+            <img src="img/diag9.gif" alt="Packet" title="A packet" class="center">
             <figcaption>Diagram 9 </figcaption>
         </figure>
 
